@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="te">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Clone</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #fafafa; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .profile-container { background: white; border: 1px solid #dbdbdb; border-radius: 8px; padding: 20px; text-align: center; width: 320px; }
+        .stats { display: flex; gap: 20px; justify-content: center; margin: 15px 0; }
+        .btn { background-color: #0095f6; color: white; padding: 8px 16px; text-decoration: none; border-radius: 5px; display: inline-block; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="profile-container">
+        <h2>📸 నా ఇన్‌స్టాగ్రామ్ ప్రొఫైల్</h2>
+        <div class="stats">
+            <div><b>{{ profile[0] }}</b> <br>posts</div>
+            <div><b>{{ profile[1] }}</b> <br>followers</div>
+            <div><b>{{ profile[2] }}</b> <br>following</div>
+        </div>
+        <hr><br>
+        <a href="/messenger" class="btn">💬 చాట్ చేయండి</a>
+    </div>
+</body>
+</html>
